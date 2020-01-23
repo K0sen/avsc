@@ -149,6 +149,7 @@ export function createBlobDecoder(blob: Blob, opts?: Partial<DecoderOptions>): s
 export function discoverProtocol(transport: Service.Transport, options: any, callback: Callback<any>): void;
 export function discoverProtocol(transport: Service.Transport, callback: Callback<any>): void;
 export function extractFileHeader(filePath: string, options?: any): void;
+export function validateFileHeader(data: Uint16Array): boolean;
 export function parse(schemaOrProtocolIdl: string, options?: any): any; // TODO protocol literal or Type
 export function readProtocol(protocolIdl: string, options?: Partial<DecoderOptions>): any;
 export function readSchema(schemaIdl: string, options?: Partial<DecoderOptions>): Schema;
